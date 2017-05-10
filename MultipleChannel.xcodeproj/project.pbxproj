@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25BA8F5BCD00747F3EF9ECBC /* libPods-MultipleChannel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D377963364ED14F0E8D02C0 /* libPods-MultipleChannel.a */; };
 		47A7A75D1EC31827009BC7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A7A75C1EC31827009BC7F5 /* main.m */; };
 		47A7A7601EC31827009BC7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A7A75F1EC31827009BC7F5 /* AppDelegate.m */; };
 		47A7A7631EC31827009BC7F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A7A7621EC31827009BC7F5 /* ViewController.m */; };
@@ -26,6 +27,9 @@
 		47A7A7671EC31827009BC7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47A7A76A1EC31827009BC7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A7A76C1EC31827009BC7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D377963364ED14F0E8D02C0 /* libPods-MultipleChannel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultipleChannel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87C6AB47CE60B8DDAE3CB9A /* Pods-MultipleChannel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipleChannel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel.debug.xcconfig"; sourceTree = "<group>"; };
+		F520ACC88C631D9FFB4BECC2 /* Pods-MultipleChannel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipleChannel.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BA8F5BCD00747F3EF9ECBC /* libPods-MultipleChannel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				47A7A75A1EC31827009BC7F5 /* MultipleChannel */,
 				47A7A7591EC31827009BC7F5 /* Products */,
+				9CA8A0BD5D81C1817A98E37F /* Pods */,
+				F719B89C60787EF311A86168 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9CA8A0BD5D81C1817A98E37F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D87C6AB47CE60B8DDAE3CB9A /* Pods-MultipleChannel.debug.xcconfig */,
+				F520ACC88C631D9FFB4BECC2 /* Pods-MultipleChannel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F719B89C60787EF311A86168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D377963364ED14F0E8D02C0 /* libPods-MultipleChannel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47A7A76F1EC31827009BC7F5 /* Build configuration list for PBXNativeTarget "MultipleChannel" */;
 			buildPhases = (
+				ED3532E7A33D142A8FB5F0B3 /* [CP] Check Pods Manifest.lock */,
 				47A7A7541EC31827009BC7F5 /* Sources */,
 				47A7A7551EC31827009BC7F5 /* Frameworks */,
 				47A7A7561EC31827009BC7F5 /* Resources */,
+				82C9AD9542FE41047E6667E5 /* [CP] Embed Pods Frameworks */,
+				EF037FEE8C0747964C88EA11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82C9AD9542FE41047E6667E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3532E7A33D142A8FB5F0B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF037FEE8C0747964C88EA11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47A7A7541EC31827009BC7F5 /* Sources */ = {
@@ -273,24 +348,28 @@
 		};
 		47A7A7701EC31827009BC7F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87C6AB47CE60B8DDAE3CB9A /* Pods-MultipleChannel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 73TY8N98GF;
 				INFOPLIST_FILE = MultipleChannel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HC.MultipleChannel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HC.ContactTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		47A7A7711EC31827009BC7F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F520ACC88C631D9FFB4BECC2 /* Pods-MultipleChannel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 73TY8N98GF;
 				INFOPLIST_FILE = MultipleChannel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HC.MultipleChannel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HC.ContactTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
