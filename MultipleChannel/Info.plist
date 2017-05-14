@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>HOST1</key>
+	<string>$(HOST1)</string>
+	<key>HOST2</key>
+	<string>$(HOST2)</string>
 </dict>
 </plist>

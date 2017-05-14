@@ -1,0 +1,15 @@
+//
+//  PrePublish.xcconfig
+//  MultipleChannel
+//
+//  Created by HChong on 2017/5/14.
+//  Copyright © 2017年 HChong. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel.prepublish.xcconfig"
+
+HOST1 = @"HOST1/PrePublish"
+
+HOST2 = @"HOST2/PrePublish"
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) HOST2='$(HOST2)' HOST1='$(HOST1)'

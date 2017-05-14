@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		25BA8F5BCD00747F3EF9ECBC /* libPods-MultipleChannel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D377963364ED14F0E8D02C0 /* libPods-MultipleChannel.a */; };
+		477D3F681EC891C200EA8A79 /* Develop.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 477D3F671EC891C200EA8A79 /* Develop.xcconfig */; };
+		477D3F6A1EC89B8300EA8A79 /* PrePublish.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 477D3F691EC89B8300EA8A79 /* PrePublish.xcconfig */; };
 		47A7A75D1EC31827009BC7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A7A75C1EC31827009BC7F5 /* main.m */; };
 		47A7A7601EC31827009BC7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A7A75F1EC31827009BC7F5 /* AppDelegate.m */; };
 		47A7A7631EC31827009BC7F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A7A7621EC31827009BC7F5 /* ViewController.m */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		477D3F671EC891C200EA8A79 /* Develop.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
+		477D3F691EC89B8300EA8A79 /* PrePublish.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = PrePublish.xcconfig; sourceTree = "<group>"; };
 		47A7A7581EC31827009BC7F5 /* MultipleChannel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleChannel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A7A75C1EC31827009BC7F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47A7A75E1EC31827009BC7F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				47A7A75C1EC31827009BC7F5 /* main.m */,
+				477D3F671EC891C200EA8A79 /* Develop.xcconfig */,
+				477D3F691EC89B8300EA8A79 /* PrePublish.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			files = (
 				47A7A76B1EC31827009BC7F5 /* LaunchScreen.storyboard in Resources */,
 				47A7A7681EC31827009BC7F5 /* Assets.xcassets in Resources */,
+				477D3F6A1EC89B8300EA8A79 /* PrePublish.xcconfig in Resources */,
+				477D3F681EC891C200EA8A79 /* Develop.xcconfig in Resources */,
 				47A7A7661EC31827009BC7F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +262,132 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		477D3F651EC891AD00EA8A79 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Develop;
+		};
+		477D3F661EC891AD00EA8A79 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477D3F671EC891C200EA8A79 /* Develop.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 73TY8N98GF;
+				INFOPLIST_FILE = MultipleChannel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HC.ContactTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Develop;
+		};
+		477D3F6B1EC89BC700EA8A79 /* PrePublish */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PrePublish;
+		};
+		477D3F6C1EC89BC700EA8A79 /* PrePublish */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477D3F691EC89B8300EA8A79 /* PrePublish.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 73TY8N98GF;
+				INFOPLIST_FILE = MultipleChannel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HC.ContactTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = PrePublish;
+		};
 		47A7A76D1EC31827009BC7F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -381,6 +515,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47A7A76D1EC31827009BC7F5 /* Debug */,
+				477D3F651EC891AD00EA8A79 /* Develop */,
+				477D3F6B1EC89BC700EA8A79 /* PrePublish */,
 				47A7A76E1EC31827009BC7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -390,9 +526,12 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47A7A7701EC31827009BC7F5 /* Debug */,
+				477D3F661EC891AD00EA8A79 /* Develop */,
+				477D3F6C1EC89BC700EA8A79 /* PrePublish */,
 				47A7A7711EC31827009BC7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
