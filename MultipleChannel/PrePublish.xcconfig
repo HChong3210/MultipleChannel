@@ -12,4 +12,8 @@ HOST1 = @"HOST1/PrePublish"
 
 HOST2 = @"HOST2/PrePublish"
 
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) HOST2='$(HOST2)' HOST1='$(HOST1)'
+DisplayName = APPPre
+
+Icon = KaiDi
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) HOST2='$(HOST2)' HOST1='$(HOST1)' Icon='$(Icon)'

@@ -1,19 +1,19 @@
 //
-//  Develop.xcconfig
+//  Enterprise.xcconfig
 //  MultipleChannel
 //
 //  Created by HChong on 2017/5/14.
 //  Copyright © 2017年 HChong. All rights reserved.
 //
 
-#include "Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel.develop.xcconfig"
+#include "Pods/Target Support Files/Pods-MultipleChannel/Pods-MultipleChannel.enterprise.xcconfig"
 
-HOST1 = @"HOST1/Develop"
+HOST1 = @"HOST1/Enterprise"
 
-HOST2 = @"HOST2/Develop"
+HOST2 = @"HOST2/Enterprise"
 
-DisplayName = APPDev
+DisplayName = APPEnt
 
-Icon = Develop
+Icon = JieHe
 
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) HOST2='$(HOST2)' HOST1='$(HOST1)' Icon='$(Icon)'

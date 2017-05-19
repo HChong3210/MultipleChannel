@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDisplayName</key>
-	<string>${DisplayName}</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,10 +18,6 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>HOST1</key>
-	<string>$(HOST1)</string>
-	<key>HOST2</key>
-	<string>$(HOST2)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -47,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>HOST1</key>
+	<string>$(HOST1)</string>
+	<key>HOST2</key>
+	<string>$(HOST2)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>HOST1=&apos;$(HOST1)&apos;</string>
 </dict>
 </plist>
