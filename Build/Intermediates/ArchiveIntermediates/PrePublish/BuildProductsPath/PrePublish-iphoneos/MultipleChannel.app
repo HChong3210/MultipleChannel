@@ -1,1 +1,0 @@
-/Users/hc/Desktop/Me/MultipleChannel/Build/Intermediates/ArchiveIntermediates/PrePublish/InstallationBuildProductsLocation/Applications/MultipleChannel.app
